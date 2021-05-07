@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CEP</title>
+
+    <!--Bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.15/jquery.mask.min.js"></script>
+
+    <!--JS-->
+    <script src="js/index.js"></script>
+</head>
+<body style="background-color: aquamarine;">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12" align="center" style="margin-top:15px">
+                <div class="col-sm-3" align="center" style="margin-top:15px">
+                    <input type="text" class="form-control" id="txtCEP" name="txtCEP" placeholder="Digite seu CEP"></input>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12" align="center" style="margin-top:15px">
+                <button type="button" class="btn btn-primary" onclick="BuscaCEP()">Consultar</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-4" align="center" style="margin-top:15px">
+                <label>Logradouro</label>
+                <input type="text" class="form-control" id="txtLogradouro" name="txtLogradouro"></input>
+            </div>
+
+            <div class="col-sm-4" align="center" style="margin-top:15px">
+                <label>Bairro</label>
+                <input type="text" class="form-control" id="txtBairro" name="txtBairro"></input>
+            </div>
+
+            <div class="col-sm-4" align="center" style="margin-top:15px">
+                <label>Cidade</label>
+                <input type="text" class="form-control" id="txtCidade" name="txtCidade"></input>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-2">
+                <label>Estado</label>
+                <input type="text" class="form-control" id="txtEstado" name="txtEstado"></input>
+            </div>
+
+            <div class="col-sm-2 offset-md-8">
+                <label>IBGE</label>
+                <input type="text" class="form-control" id="txtIBGE" name="txtIBGE"></input>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
