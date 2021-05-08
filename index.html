@@ -17,40 +17,40 @@
     <script src="js/index.js"></script>
 </head>
 <body style="background-color: aquamarine;">
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-12" align="center" style="margin-top:15px">
-                <div class="col-sm-3" align="center" style="margin-top:15px">
-                    <input type="text" class="form-control" id="txtCEP" name="txtCEP" placeholder="Digite seu CEP"></input>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12" align="center" style="margin-top:15px">
-                <button type="button" class="btn btn-primary" onclick="BuscaCEP()">Consultar</button>
-            </div>
-        </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Consulta CEP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <form class="form-inline my-2 my-lg-0 offset-md-8">
+                <input class="form-control mr-sm-2" type="search" id="txtCEP" name="txtCEP" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" onclick="BuscaCEP()" type="button">Search</button>
+            </form>
+        </div>
+    </nav>
+      
+    <div class="container" style="margin-top:45px">
         <div class="row">
-            <div class="col-sm-4" align="center" style="margin-top:15px">
+            <div class="col-sm-4" align="center">
                 <label>Logradouro</label>
                 <input type="text" class="form-control" id="txtLogradouro" name="txtLogradouro"></input>
             </div>
 
-            <div class="col-sm-4" align="center" style="margin-top:15px">
+            <div class="col-sm-4" align="center">
                 <label>Bairro</label>
                 <input type="text" class="form-control" id="txtBairro" name="txtBairro"></input>
             </div>
 
-            <div class="col-sm-4" align="center" style="margin-top:15px">
+            <div class="col-sm-4" align="center">
                 <label>Cidade</label>
                 <input type="text" class="form-control" id="txtCidade" name="txtCidade"></input>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-sm-2">
+            <div class="col-sm-2" style="margin-top:15px">
                 <label>Estado</label>
                 <input type="text" class="form-control" id="txtEstado" name="txtEstado"></input>
             </div>
