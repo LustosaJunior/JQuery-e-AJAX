@@ -10,6 +10,8 @@ function BuscaCEP(){
         url: endPoint,
         type: "GET",
         success: function(response){
+            $('#containerMaster').css("display","block");
+
             console.log(response);
 
             $('#txtLogradouro').val(response.logradouro);
@@ -17,6 +19,9 @@ function BuscaCEP(){
             $('#txtCidade').val(response.localidade);
             $('#txtEstado').val(response.uf);
             $('#txtIBGE').val(response.ibge);
+        },
+        error: function(){
+            alert('Error favor reportar ao responsável do site');
         }
     })
 }
