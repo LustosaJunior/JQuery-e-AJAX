@@ -9,7 +9,12 @@ function BuscaCEP(){
     $.ajax({
         url: endPoint,
         type: "GET",
+        beforeSend: function(){
+            $('#loading').css("display","block");
+            $('#containerMaster').css("display","none");
+        },
         success: function(response){
+            $('#loading').css("display","none");
             $('#containerMaster').css("display","block");
 
             console.log(response);
